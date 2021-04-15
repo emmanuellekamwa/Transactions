@@ -58,3 +58,47 @@ FOREIGN KEY ("group_id")
   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(8364784763724574290)[0m
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-04-15 13:40:48 +0100
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 97.3ms | Allocations: 445)
+Completed 200 OK in 371ms (Views: 138.8ms | ActiveRecord: 0.0ms | Allocations: 3632)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-15 14:11:37 +0100
+  [1m[35m (393.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 80.8ms | Allocations: 333)
+Completed 200 OK in 414ms (Views: 154.6ms | ActiveRecord: 0.0ms | Allocations: 2459)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:12:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:19:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:22:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:43:21 +0100
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:45:30 +0100
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users" for 127.0.0.1 at 2021-04-15 14:46:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
