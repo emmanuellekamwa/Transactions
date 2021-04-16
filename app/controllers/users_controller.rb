@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
     before_action :logged_in_user, only: %i[show logout]
-    before_action :already_in, only: %i[new login]
   
     def new
       @user = User.new
@@ -17,12 +16,10 @@ class UsersController < ApplicationController
       end
     end
   
-    def show; end
-  
-    # basic User Session methods
-    def login; end
+    def show
+    end
 
-    def logincreate
+    def login
       @user = User.find_by(name: params[:session][:name])
       if @user
         session[:user_id] = @user.id
