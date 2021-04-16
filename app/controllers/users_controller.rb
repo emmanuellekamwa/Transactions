@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   
     # basic User Session methods
     def login; end
-  
+
     def logincreate
       @user = User.find_by(name: params[:session][:name])
       if @user
