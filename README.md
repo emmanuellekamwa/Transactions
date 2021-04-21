@@ -15,6 +15,34 @@ To have access to this project on your local machine, follow the following steps
 - Launch the server by typing rails server
 - Run tests using rspec
 
+## Built With
+
+- Ruby on Rails
+- Bootstrap
+- VsCode
+
+## Live demo
+[Live Demo](https://fathomless-eyrie-49106.herokuapp.com/)
+
+## Author
+
+**Kamwa Emmanuelle Alix**
+- Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+-Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+-Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4)
+
+## Credits
+
+This credit is given to the author of the desing Gregoire Vella https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding
+
+## Contributions
+
+Contributions, issues and feature requests are highly welcomed
+
+## Show some support
+
+Give a star if you like this project
+
 
 
 
