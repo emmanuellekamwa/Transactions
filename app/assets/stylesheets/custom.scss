@@ -17,6 +17,10 @@ $primary: #3778c2;
   }
 }
 
+.text-center {
+  font-family: 'Cookie', cursive;
+}
+
 .home_title {
   font-family: 'Cookie', cursive;
   font-size: 2.5em;
@@ -27,11 +31,33 @@ $primary: #3778c2;
   }
 }
 
+.user {
+  position: relative;
+  left: 70px;
+}
+
+.login {
+  position: relative;
+  left: 130px;
+}
+
+.form-controls {
+  width: 70%;
+  margin-left: 150px;
+}
+
+.fields {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 70%;
+}
+
 .home_buttons {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 100px 0px 0px 200px;
+  position: relative;
+  right: 25px;
 }
 
 #o-form {
@@ -69,6 +95,7 @@ $primary: #3778c2;
     box-shadow: rgba(19, 19, 19, 0.07) 0 1px 1px inset, rgb(107, 54, 54) 0 0 6px;
   }
 }
+
 
 // All bottom buttons
 .link-btn {

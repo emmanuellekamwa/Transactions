@@ -1,5 +1,7 @@
 <% provide(:title, 'Details') %>
-
+<nav class="navbar navbar-dark bg-primary">
+    <p class="text-center">DETAILS</p>
+</nav>
 <ul class="card mx-3 list-group list-group-flush p-3">
   <li class="list-group-item p-0">
     <div class="mt-2 mb-4 d-flex">
@@ -31,7 +33,7 @@
     <%= msg %>
   </div>
 <% end %>
-<%= link_to new_transaction_path, class: "link-btn btn
-                  btn-success w-100 p-4 rounded-0" do %>
-  <span class="p-3 border border-light">NEW TRANSACTION</span>
+<%= link_to new_transaction_path, class: "link-btns btn
+                  btn-success" do %>
+  <span>NEW TRANSACTION</span>
 <% end %>

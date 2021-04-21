@@ -1,16 +1,22 @@
 <% provide(:title, 'Transactions') %>
 
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+    <p class="text-center">TRANSACTIONS</p>
+</nav>
 
 <div>
-  <div class="card mb-3 p-3 flex-row justify-content-between border-top-0" id="trn-total">
-    <h5 class="text-muted m-0">Total Amount</h5>
-    <p class="font-weight-bold m-0">$<%= number_with_precision(@transaction.sum(:amount), :precision => 2) %></p>
+  <div class="amount">
+    <h5 class="text-muted">Total Amount</h5>
+    <p class="font-weight-bold">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></p>
   </div>
 
-  <%= render @transaction %>
+  <%= render @transactions %>
 </div>
 
 <%= link_to new_transaction_path, class: "link-btn btn
-                  btn-success w-100 p-4 rounded-0" do %>
-  <span class="p-3 border border-light">NEW TRANSACTION</span>
+                  btn-success" do %>
+  <span class="button">NEW TRANSACTION</span>
 <% end %>
+</body>

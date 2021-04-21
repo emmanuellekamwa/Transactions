@@ -1,0 +1,28 @@
+$primary: #3778c2;
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'bootstrap';
+
+h1 {
+    font-size: 5em;
+    font-family: 'Cookie', cursive;
+}
+
+.form {
+    margin-top: 60px;
+}
+
+.form-control {
+    width: 70%;
+    margin-left: 120px;
+}
+
+.login{
+    margin: 50px 0px 10px 360px;
+    width: 10%;
+}
+
+.link {
+    margin:50px 0px 10px 325px;
+}
