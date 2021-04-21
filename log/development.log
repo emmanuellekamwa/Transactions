@@ -10573,3 +10573,24 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 567ms (Views: 146.1ms | ActiveRecord: 179.0ms | Allocations: 10898)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-21 15:06:24 +0100
+  [1m[35m (36.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 23.1ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70021.7ms | Allocations: 203735)
+Completed 200 OK in 70214ms (Views: 70115.8ms | ActiveRecord: 0.0ms | Allocations: 206373)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-21 15:08:08 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.0ms | Allocations: 6770)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 7151)
+
+

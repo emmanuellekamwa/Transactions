@@ -28,8 +28,8 @@ To have access to this project on your local machine, follow the following steps
 
 **Kamwa Emmanuelle Alix**
 - Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
--Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
--Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4)
+- Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+- Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4)
 
 ## Credits
 
