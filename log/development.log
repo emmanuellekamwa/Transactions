@@ -11193,3 +11193,23 @@ Processing by StaticController#home as HTML
 Completed 200 OK in 8434ms (Views: 8429.9ms | ActiveRecord: 0.0ms | Allocations: 53532)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-23 10:04:35 +0100
+  [1m[35m (34.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/kamwa/Transactions/app/helpers/transactions_helper.rb:8: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/helpers/transactions_helper.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/helpers/transactions_helper.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/helpers/transactions_helper.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/static_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-04-23 10:05:28 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 16.6ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30976.1ms | Allocations: 108157)
+Completed 200 OK in 31079ms (Views: 30998.4ms | ActiveRecord: 0.0ms | Allocations: 110165)
+
+

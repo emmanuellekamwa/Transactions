@@ -8,12 +8,12 @@ $primary: #3778c2;
   background-color: #fafafa;
   height: 100vh;
   padding: 0;
-  max-width: 660px !important;
+  max-width: 660px;
 
   #subcontainer {
     height: calc(100% - 56px);
     font-family: Proxima Nova bold;
-    max-width: 660px !important;
+    max-width: 660px;
   }
 }
 
@@ -94,7 +94,7 @@ $primary: #3778c2;
 
 // All bottom buttons
 .link-btn {
-  display: inline-grid !important;
+  display: inline-grid;
 }
 
 //icons
@@ -102,11 +102,11 @@ $primary: #3778c2;
 img {
   height: 80px;
   min-width: 80px;
-  width: 80px !important;
+  width: 80px;
 }
 
 .lg-img {
   height: 100px;
-  width: 100px !important;
+  width: 100px;
 }
 
