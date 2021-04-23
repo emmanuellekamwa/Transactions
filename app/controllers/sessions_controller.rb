@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       redirect_to @user
       flash[:success] = 'Welcome back!'
     else
-      flash.now[:danger] = 'Invalid name!'
+      flash[:danger] = 'Username does not exist!'
       render 'new'
     end
   end
