@@ -1,5 +1,8 @@
 <% provide(:title, 'Group Details') %>
 
+<nav class="navbar navbar-dark bg-primary">
+  <p class="text-center head text-white mt-1">GROUP DETAILS</p>
+</nav>
 <ul class="card mx-3 list-group list-group-flush p-3">
   <li class="list-group-item p-0 d-flex justify-content-between">
     <h4 class="mt-2 mb-4"><%= @group.name %></h4>
@@ -21,7 +24,7 @@
       <%= msg %>
     </div>
   <% end %>
-<%= link_to new_group_path, class: "link-btn btn
-                  btn-success w-100 p-4 rounded-0" do %>
+<%= link_to new_group_path, class: "linked btn
+                  btn-success p-4 rounded-0" do %>
   <span class="p-3 border border-light">NEW GROUP</span>
 <% end %>

@@ -13,16 +13,19 @@ h1 {
     margin-top: 60px;
 }
 
-.form-control {
+.form-controls {
     width: 70%;
-    margin-left: 120px;
+    margin-left: 170px;
 }
 
 .login{
-    margin: 50px 0px 10px 360px;
-    width: 10%;
+    position: relative;
+    left: -10px;
+    width: 40%;
 }
 
 .link {
-    margin:50px 0px 10px 325px;
+    margin-left: 330px;
+    position: relative;
+    top: 100px;
 }

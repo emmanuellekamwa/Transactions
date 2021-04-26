@@ -11213,3 +11213,2031 @@ Processing by StaticController#home as HTML
 Completed 200 OK in 31079ms (Views: 30998.4ms | ActiveRecord: 0.0ms | Allocations: 110165)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-23 11:19:13 +0100
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 15.2ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 773.5ms | Allocations: 17542)
+Completed 200 OK in 877ms (Views: 816.3ms | ActiveRecord: 0.0ms | Allocations: 20179)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 11:19:59 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 38.6ms | Allocations: 558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 156.1ms | Allocations: 7183)
+Completed 200 OK in 165ms (Views: 163.0ms | ActiveRecord: 0.0ms | Allocations: 8072)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 11:21:15 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 414)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 7187)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.0ms | Allocations: 8278)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 11:36:03 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17174.6ms | Allocations: 78454)
+Completed 200 OK in 17184ms (Views: 17182.6ms | Allocations: 78833)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-23 12:35:12 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"name"=>"Emma"}, "commit"=>"Log in"}
+  [1m[36mUser Load (34.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Emma"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2173ms (ActiveRecord: 390.2ms | Allocations: 11684)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-23 12:35:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 50.4ms | Allocations: 1182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 196.7ms | Allocations: 7751)
+Completed 200 OK in 246ms (Views: 213.2ms | ActiveRecord: 15.5ms | Allocations: 9427)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-23 12:42:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 1062)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.9ms | Allocations: 7841)
+Completed 200 OK in 269ms (Views: 127.5ms | ActiveRecord: 84.1ms | Allocations: 12722)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2021-04-23 12:44:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (15.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10275.7ms | Allocations: 35795)
+Completed 200 OK in 10309ms (Views: 10277.8ms | ActiveRecord: 19.1ms | Allocations: 36871)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:49:14 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (44.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 12)
+  Rendered groups/index.html.erb within layouts/application (Duration: 129.3ms | Allocations: 1295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 175.2ms | Allocations: 7859)
+Completed 200 OK in 262ms (Views: 136.6ms | ActiveRecord: 44.7ms | Allocations: 10151)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:52:31 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (16.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 157.3ms | Allocations: 7741)
+Completed 200 OK in 221ms (Views: 173.3ms | ActiveRecord: 16.9ms | Allocations: 8991)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:52:45 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.2ms | Allocations: 7732)
+Completed 200 OK in 127ms (Views: 111.3ms | ActiveRecord: 5.6ms | Allocations: 8971)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:54:49 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 29.5ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.5ms | Allocations: 7736)
+Completed 200 OK in 139ms (Views: 111.6ms | ActiveRecord: 5.7ms | Allocations: 8978)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:55:12 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (10.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 25.8ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.9ms | Allocations: 7732)
+Completed 200 OK in 112ms (Views: 94.2ms | ActiveRecord: 10.3ms | Allocations: 8972)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:55:40 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (9.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.3ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 31.9ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 114.9ms | Allocations: 7735)
+Completed 200 OK in 138ms (Views: 118.3ms | ActiveRecord: 9.6ms | Allocations: 8972)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:55:57 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (7.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.7ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | Allocations: 7797)
+Completed 200 OK in 130ms (Views: 111.3ms | ActiveRecord: 7.6ms | Allocations: 9034)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:56:06 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (10.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 963)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.2ms | Allocations: 7796)
+Completed 200 OK in 151ms (Views: 135.8ms | ActiveRecord: 10.4ms | Allocations: 9038)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:59:45 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (3.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.5ms | Allocations: 7732)
+Completed 200 OK in 103ms (Views: 91.2ms | ActiveRecord: 3.4ms | Allocations: 8972)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 12:59:59 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (8.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16794.5ms | Allocations: 35390)
+Completed 200 OK in 16809ms (Views: 16792.4ms | ActiveRecord: 8.0ms | Allocations: 35916)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:01:16 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (39.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 53.0ms | Allocations: 822)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10276.4ms | Allocations: 34076)
+Completed 200 OK in 10292ms (Views: 10240.6ms | ActiveRecord: 39.0ms | Allocations: 34602)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:01:41 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8728.2ms | Allocations: 36057)
+Completed 200 OK in 8780ms (Views: 8734.2ms | ActiveRecord: 5.8ms | Allocations: 36582)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:02:40 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (6.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9248.5ms | Allocations: 34949)
+Completed 200 OK in 9265ms (Views: 9248.9ms | ActiveRecord: 6.1ms | Allocations: 35473)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:03:41 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (9.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.2ms | Allocations: 7772)
+Completed 200 OK in 190ms (Views: 170.3ms | ActiveRecord: 9.2ms | Allocations: 9014)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:03:58 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (24.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 198.7ms | Allocations: 7731)
+Completed 200 OK in 229ms (Views: 193.7ms | ActiveRecord: 24.9ms | Allocations: 8967)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:04:48 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (10.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 46.7ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 287.7ms | Allocations: 7734)
+Completed 200 OK in 357ms (Views: 291.9ms | ActiveRecord: 10.4ms | Allocations: 8970)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:41:22 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (33.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9326.1ms | Allocations: 35668)
+Completed 200 OK in 9802ms (Views: 9301.0ms | ActiveRecord: 326.7ms | Allocations: 39130)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:41:50 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9811.8ms | Allocations: 34256)
+Completed 200 OK in 9824ms (Views: 9815.4ms | ActiveRecord: 5.1ms | Allocations: 34780)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:42:39 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (9.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10132.4ms | Allocations: 33691)
+Completed 200 OK in 10143ms (Views: 10126.0ms | ActiveRecord: 9.5ms | Allocations: 34215)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:44:29 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (8.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8254.7ms | Allocations: 35941)
+Completed 200 OK in 8268ms (Views: 8251.6ms | ActiveRecord: 8.5ms | Allocations: 36466)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:45:09 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9863.1ms | Allocations: 35590)
+Completed 200 OK in 9895ms (Views: 9872.5ms | ActiveRecord: 5.9ms | Allocations: 36114)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:45:36 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (3.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8566.8ms | Allocations: 36095)
+Completed 200 OK in 8574ms (Views: 8565.4ms | ActiveRecord: 3.7ms | Allocations: 36620)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:49:16 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (11.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10302.4ms | Allocations: 34608)
+Completed 200 OK in 10327ms (Views: 10293.6ms | ActiveRecord: 11.8ms | Allocations: 35132)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:49:39 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (8.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 35.7ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12219.6ms | Allocations: 57051)
+Completed 200 OK in 12245ms (Views: 12215.1ms | ActiveRecord: 8.8ms | Allocations: 57576)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:50:06 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (6.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 24.6ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9351.1ms | Allocations: 36091)
+Completed 200 OK in 9365ms (Views: 9353.9ms | ActiveRecord: 6.8ms | Allocations: 36616)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:50:27 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (85.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 101.0ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10894.4ms | Allocations: 34209)
+Completed 200 OK in 10956ms (Views: 10812.8ms | ActiveRecord: 85.0ms | Allocations: 34734)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:57:07 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (22.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 46.9ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14708.7ms | Allocations: 34552)
+Completed 200 OK in 15158ms (Views: 14692.4ms | ActiveRecord: 276.0ms | Allocations: 37989)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:57:34 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12485.3ms | Allocations: 36135)
+Completed 200 OK in 12508ms (Views: 12495.7ms | ActiveRecord: 5.4ms | Allocations: 36659)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 13:58:05 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (10.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered groups/index.html.erb within layouts/application (Duration: 66.2ms | Allocations: 821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12559.4ms | Allocations: 36152)
+Completed 200 OK in 12578ms (Views: 12550.6ms | ActiveRecord: 10.9ms | Allocations: 36676)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 13:58:59 +0100
+Processing by GroupsController#new as HTML
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms | Allocations: 2200)
+
+
+  
+NameError (uninitialized constant GroupsHelper::RestClient):
+  
+app/helpers/groups_helper.rb:3:in `icons'
+app/controllers/groups_controller.rb:5:in `new'
+Started POST "/__web_console/repl_sessions/b28666d53f569e86e3f75a81f16d54b3/trace" for 127.0.0.1 at 2021-04-23 14:06:19 +0100
+Started POST "/__web_console/repl_sessions/b28666d53f569e86e3f75a81f16d54b3/trace" for 127.0.0.1 at 2021-04-23 14:06:24 +0100
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 14:57:52 +0100
+  [1m[35m (15.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/new.html.erb within layouts/application (Duration: 173.1ms | Allocations: 7262)
+  Rendered layout layouts/application.html.erb (Duration: 174.7ms | Allocations: 7331)
+Completed 500 Internal Server Error in 1981ms (ActiveRecord: 98.4ms | Allocations: 18811)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_form_errors with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/kamwa/Transactions/app/views"
+  * "/home/kamwa/.rvm/gems/ruby-2.7.2/gems/actiontext-6.1.3.1/app/views"
+  * "/home/kamwa/.rvm/gems/ruby-2.7.2/gems/actionmailbox-6.1.3.1/app/views"
+):
+    21:   </ul>
+    22: 
+    23:   <%= f.submit class: "btn btn-primary my-4 mx-auto d-block" %>
+    24:   <%= render  partial: 'shared/form_errors', locals: { model: @group } %>
+    25: <% end %>
+  
+app/views/groups/new.html.erb:24
+app/views/groups/new.html.erb:2
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:00:05 +0100
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:00:06 +0100
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:00:10 +0100
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:01:28 +0100
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:05:14 +0100
+Started POST "/__web_console/repl_sessions/03257074701d17c21fe2043ca0cc2831/trace" for 127.0.0.1 at 2021-04-23 15:05:16 +0100
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:14:10 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 4.2ms | Allocations: 210)
+  Rendered groups/new.html.erb within layouts/application (Duration: 104.3ms | Allocations: 2948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17355.7ms | Allocations: 51233)
+Completed 200 OK in 18947ms (Views: 17409.4ms | Allocations: 55914)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:20:14 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 12.8ms | Allocations: 203)
+  Rendered groups/new.html.erb within layouts/application (Duration: 29.1ms | Allocations: 2838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 102.7ms | Allocations: 9613)
+Completed 200 OK in 1495ms (Views: 134.0ms | Allocations: 14090)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:21:06 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 1.0ms | Allocations: 203)
+  Rendered groups/new.html.erb within layouts/application (Duration: 31.4ms | Allocations: 2832)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.1ms | Allocations: 9607)
+Completed 200 OK in 1650ms (Views: 106.3ms | Allocations: 14060)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:21:17 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.3ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 90.6ms | Allocations: 2180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4287.1ms | Allocations: 8785)
+Completed 200 OK in 5675ms (Views: 4291.0ms | Allocations: 12517)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:22:24 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 4.0ms | Allocations: 203)
+  Rendered groups/new.html.erb within layouts/application (Duration: 188.7ms | Allocations: 2832)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13852.8ms | Allocations: 37525)
+Completed 200 OK in 15440ms (Views: 13868.8ms | Allocations: 41996)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:24:34 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 25.7ms | Allocations: 2180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9990.8ms | Allocations: 36337)
+Completed 200 OK in 11346ms (Views: 9993.0ms | Allocations: 40112)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:25:01 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10196.9ms | Allocations: 36438)
+Completed 200 OK in 11544ms (Views: 10205.9ms | Allocations: 40175)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:25:29 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8432.5ms | Allocations: 36940)
+Completed 200 OK in 9557ms (Views: 8437.0ms | Allocations: 40739)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:26:04 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 41.0ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9459.5ms | Allocations: 36661)
+Completed 200 OK in 10631ms (Views: 9461.5ms | Allocations: 40424)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:27:12 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8633.0ms | Allocations: 36283)
+Completed 200 OK in 9907ms (Views: 8636.6ms | Allocations: 40070)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:27:36 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10260.2ms | Allocations: 36370)
+Completed 200 OK in 11538ms (Views: 10264.5ms | Allocations: 40141)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 15:28:10 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 4.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 32.9ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10645.9ms | Allocations: 37222)
+Completed 200 OK in 11962ms (Views: 10669.7ms | Allocations: 40991)
+
+
+Started POST "/groups" for 127.0.0.1 at 2021-04-23 15:29:23 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group"=>{"name"=>"Perfumes", "icon"=>"https://www.flaticon.com/svg/vstatic/svg/91/91274.svg?token=exp=1619188991~hmac=7f01f6f580a25d95576c7ec92ad7fd2e"}, "commit"=>"Create Group"}
+  [1m[36mUser Load (31.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Exists? (162.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Perfumes"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Create (206.0ms)[0m  [1m[32mINSERT INTO "groups" ("name", "icon", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Perfumes"], ["icon", "https://www.flaticon.com/svg/vstatic/svg/91/91274.svg?token=exp=1619188991~hmac=7f01f6f580a25d95576c7ec92ad7fd2e"], ["user_id", 2], ["created_at", "2021-04-23 14:29:27.331241"], ["updated_at", "2021-04-23 14:29:27.331241"]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (27.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1
+Completed 302 Found in 4375ms (ActiveRecord: 1002.9ms | Allocations: 17161)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:29:27 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (2.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (48.5ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 12)
+  [1m[35m (14.9ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 764.7ms | Allocations: 5518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 817.0ms | Allocations: 12023)
+Completed 200 OK in 953ms (Views: 761.6ms | ActiveRecord: 79.4ms | Allocations: 15024)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:32:33 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (2.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (17.8ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 55.5ms | Allocations: 1840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 334.1ms | Allocations: 8439)
+Completed 200 OK in 447ms (Views: 313.4ms | ActiveRecord: 27.0ms | Allocations: 9604)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:34:21 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (15.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (12.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (48.6ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 165.7ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 504.5ms | Allocations: 8867)
+Completed 200 OK in 695ms (Views: 540.1ms | ActiveRecord: 77.0ms | Allocations: 10739)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:36:25 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (7.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (14.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (9.8ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 51.2ms | Allocations: 2097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11715.2ms | Allocations: 37257)
+Completed 200 OK in 11774ms (Views: 11718.5ms | ActiveRecord: 31.2ms | Allocations: 39131)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:37:04 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (6.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (7.8ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 61.0ms | Allocations: 1843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12138.4ms | Allocations: 35474)
+Completed 200 OK in 12192ms (Views: 12130.1ms | ActiveRecord: 19.8ms | Allocations: 36631)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:37:39 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (10.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (23.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (18.0ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 67.8ms | Allocations: 1840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11036.3ms | Allocations: 35903)
+Completed 200 OK in 11090ms (Views: 11000.6ms | ActiveRecord: 51.6ms | Allocations: 37068)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:39:11 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (15.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (15.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (14.4ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 56.5ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15770.6ms | Allocations: 35473)
+Completed 200 OK in 15815ms (Views: 15752.2ms | ActiveRecord: 44.9ms | Allocations: 36628)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:39:54 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (8.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (11.8ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (14.2ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 58.9ms | Allocations: 1840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12759.2ms | Allocations: 36733)
+Completed 200 OK in 12807ms (Views: 12739.1ms | ActiveRecord: 34.7ms | Allocations: 37896)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:40:52 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (11.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (19.6ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:10
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:15
+  Rendered groups/show.html.erb within layouts/application (Duration: 70.3ms | Allocations: 1839)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11773.4ms | Allocations: 35519)
+Completed 200 OK in 11822ms (Views: 11755.1ms | ActiveRecord: 40.1ms | Allocations: 36675)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:44:21 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (7.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (17.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 88.9ms | Allocations: 2102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 244.3ms | Allocations: 8874)
+Completed 200 OK in 456ms (Views: 327.0ms | ActiveRecord: 30.0ms | Allocations: 10746)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:44:54 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (11.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (14.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 65.7ms | Allocations: 2097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 220.2ms | Allocations: 8869)
+Completed 200 OK in 281ms (Views: 200.4ms | ActiveRecord: 36.2ms | Allocations: 10736)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:48:01 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (4.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (8.0ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (9.0ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 55.4ms | Allocations: 2097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.6ms | Allocations: 8869)
+Completed 200 OK in 216ms (Views: 153.6ms | ActiveRecord: 21.0ms | Allocations: 10736)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:48:18 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (3.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (14.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (13.9ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 54.5ms | Allocations: 2097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 228.5ms | Allocations: 8870)
+Completed 200 OK in 276ms (Views: 216.2ms | ActiveRecord: 31.6ms | Allocations: 10738)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:48:44 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (8.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (21.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 88.7ms | Allocations: 2100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 193.0ms | Allocations: 8873)
+Completed 200 OK in 241ms (Views: 168.3ms | ActiveRecord: 42.1ms | Allocations: 10746)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:49:04 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (11.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (21.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 56.6ms | Allocations: 2096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 137.4ms | Allocations: 8868)
+Completed 200 OK in 202ms (Views: 118.9ms | ActiveRecord: 46.1ms | Allocations: 10735)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:49:26 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (6.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (11.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 58.4ms | Allocations: 2098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 158.4ms | Allocations: 8870)
+Completed 200 OK in 202ms (Views: 151.8ms | ActiveRecord: 31.0ms | Allocations: 10742)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:49:35 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (7.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (9.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (11.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 70.7ms | Allocations: 2097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 147.3ms | Allocations: 8870)
+Completed 200 OK in 193ms (Views: 143.2ms | ActiveRecord: 27.8ms | Allocations: 10737)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:50:08 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (13.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (10.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 61.1ms | Allocations: 1843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14479.4ms | Allocations: 35916)
+Completed 200 OK in 14538ms (Views: 14481.1ms | ActiveRecord: 31.0ms | Allocations: 37073)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:51:22 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (13.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (23.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 55.1ms | Allocations: 1839)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15316.5ms | Allocations: 35018)
+Completed 200 OK in 15443ms (Views: 15293.6ms | ActiveRecord: 42.5ms | Allocations: 36174)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:52:07 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (25.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (4.8ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 51.2ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9901.3ms | Allocations: 36286)
+Completed 200 OK in 9997ms (Views: 9903.2ms | ActiveRecord: 37.7ms | Allocations: 37441)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:53:36 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (18.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (9.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 40.0ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11184.1ms | Allocations: 35384)
+Completed 200 OK in 11221ms (Views: 11171.1ms | ActiveRecord: 33.1ms | Allocations: 36539)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:54:11 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (5.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (13.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 50.3ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18212.3ms | Allocations: 35453)
+Completed 200 OK in 18243ms (Views: 18197.1ms | ActiveRecord: 27.2ms | Allocations: 36608)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:56:03 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (22.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (18.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 148.2ms | Allocations: 2102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 396.4ms | Allocations: 8874)
+Completed 200 OK in 551ms (Views: 445.4ms | ActiveRecord: 63.3ms | Allocations: 10746)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:59:13 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (5.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (8.6ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 43.5ms | Allocations: 1843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9913.8ms | Allocations: 37212)
+Completed 200 OK in 9936ms (Views: 9906.7ms | ActiveRecord: 17.1ms | Allocations: 38368)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 15:59:48 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (2.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (6.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 66.0ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10041.4ms | Allocations: 36355)
+Completed 200 OK in 10095ms (Views: 10038.3ms | ActiveRecord: 14.3ms | Allocations: 37510)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 16:00:11 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (7.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (8.0ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 49.1ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10160.2ms | Allocations: 37032)
+Completed 200 OK in 10192ms (Views: 10151.8ms | ActiveRecord: 22.1ms | Allocations: 38188)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2021-04-23 16:00:38 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (7.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (13.5ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (8.9ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 52.8ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11069.7ms | Allocations: 36749)
+Completed 200 OK in 11122ms (Views: 11054.3ms | ActiveRecord: 29.8ms | Allocations: 37906)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 16:02:56 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 34.1ms | Allocations: 210)
+  Rendered groups/new.html.erb within layouts/application (Duration: 171.8ms | Allocations: 2852)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 219.9ms | Allocations: 9451)
+Completed 200 OK in 2405ms (Views: 228.3ms | ActiveRecord: 0.0ms | Allocations: 13356)
+
+
+Started POST "/groups" for 127.0.0.1 at 2021-04-23 16:03:25 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group"=>{"name"=>"Dresses"}, "commit"=>"Create Group"}
+  [1m[36mUser Load (74.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Exists? (106.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Dresses"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Create (159.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dresses"], ["user_id", 2], ["created_at", "2021-04-23 15:03:26.077521"], ["updated_at", "2021-04-23 15:03:26.077521"]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (16.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/2
+Completed 302 Found in 546ms (ActiveRecord: 367.6ms | Allocations: 4312)
+
+
+Started GET "/groups/2" for 127.0.0.1 at 2021-04-23 16:03:26 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGroup Load (3.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (11.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 2]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 2]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 53.7ms | Allocations: 1841)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.2ms | Allocations: 8439)
+Completed 200 OK in 146ms (Views: 92.5ms | ActiveRecord: 20.3ms | Allocations: 9603)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 16:03:55 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 2176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 8774)
+Completed 200 OK in 1851ms (Views: 63.6ms | ActiveRecord: 0.0ms | Allocations: 12520)
+
+
+Started POST "/groups" for 127.0.0.1 at 2021-04-23 16:04:16 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group"=>{"name"=>"Fruits"}, "commit"=>"Create Group"}
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  [1m[36mTRANSACTION (10.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Exists? (39.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Fruits"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Create (26.1ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Fruits"], ["user_id", 2], ["created_at", "2021-04-23 15:04:17.096425"], ["updated_at", "2021-04-23 15:04:17.096425"]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (29.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/3
+Completed 302 Found in 189ms (ActiveRecord: 117.1ms | Allocations: 4307)
+
+
+Started GET "/groups/3" for 127.0.0.1 at 2021-04-23 16:04:17 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGroup Load (9.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (11.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (16.3ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 58.8ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 212.7ms | Allocations: 8435)
+Completed 200 OK in 252ms (Views: 187.5ms | ActiveRecord: 37.7ms | Allocations: 9597)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2021-04-23 16:04:31 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 4.1ms | Allocations: 38)
+  Rendered groups/new.html.erb within layouts/application (Duration: 22.5ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.7ms | Allocations: 8771)
+Completed 200 OK in 1186ms (Views: 91.5ms | ActiveRecord: 0.0ms | Allocations: 12516)
+
+
+Started POST "/groups" for 127.0.0.1 at 2021-04-23 16:04:44 +0100
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "group"=>{"name"=>"Fast Foods"}, "commit"=>"Create Group"}
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  [1m[36mTRANSACTION (35.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Exists? (32.1ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Fast Foods"], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mGroup Create (28.0ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Fast Foods"], ["user_id", 2], ["created_at", "2021-04-23 15:04:45.133990"], ["updated_at", "2021-04-23 15:04:45.133990"]]
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (38.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/4
+Completed 302 Found in 262ms (ActiveRecord: 151.4ms | Allocations: 4307)
+
+
+Started GET "/groups/4" for 127.0.0.1 at 2021-04-23 16:04:45 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGroup Load (10.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:25:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mTransaction Load (4.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 4]]
+  ↳ app/views/groups/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."group_id" = $1[0m  [["group_id", 4]]
+  ↳ app/views/groups/show.html.erb:18
+  Rendered groups/show.html.erb within layouts/application (Duration: 69.5ms | Allocations: 1837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 163.1ms | Allocations: 8435)
+Completed 200 OK in 223ms (Views: 161.8ms | ActiveRecord: 23.3ms | Allocations: 9597)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:04:56 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (205.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 48.4ms | Allocations: 458)
+  Rendered groups/index.html.erb within layouts/application (Duration: 311.6ms | Allocations: 1633)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 461.5ms | Allocations: 8235)
+Completed 200 OK in 476ms (Views: 264.8ms | ActiveRecord: 205.0ms | Allocations: 8888)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:14:21 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (35.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 7.8ms | Allocations: 459)
+  Rendered groups/index.html.erb within layouts/application (Duration: 70.8ms | Allocations: 1679)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 375.7ms | Allocations: 8452)
+Completed 200 OK in 1052ms (Views: 388.7ms | ActiveRecord: 431.3ms | Allocations: 12606)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:22:21 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (13.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 14.7ms | Allocations: 448)
+  Rendered groups/index.html.erb within layouts/application (Duration: 118.7ms | Allocations: 1665)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 252.1ms | Allocations: 8437)
+Completed 200 OK in 458ms (Views: 248.0ms | ActiveRecord: 134.7ms | Allocations: 12543)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:23:42 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 13.3ms | Allocations: 449)
+  Rendered groups/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 1593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.8ms | Allocations: 8366)
+Completed 200 OK in 171ms (Views: 155.8ms | ActiveRecord: 5.3ms | Allocations: 9602)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:23:59 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (15.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 16.1ms | Allocations: 449)
+  Rendered groups/index.html.erb within layouts/application (Duration: 48.7ms | Allocations: 1593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 170.3ms | Allocations: 8365)
+Completed 200 OK in 214ms (Views: 190.0ms | ActiveRecord: 15.9ms | Allocations: 9601)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 16:26:49 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (11.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 6.9ms | Allocations: 448)
+  Rendered groups/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 1591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.5ms | Allocations: 8363)
+Completed 200 OK in 107ms (Views: 86.8ms | ActiveRecord: 11.9ms | Allocations: 9599)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 19:12:13 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (287.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 83.1ms | Allocations: 448)
+  Rendered groups/index.html.erb within layouts/application (Duration: 576.2ms | Allocations: 1664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2266.4ms | Allocations: 8441)
+Completed 200 OK in 8026ms (Views: 2182.7ms | ActiveRecord: 3980.4ms | Allocations: 12541)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 21:00:36 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (4.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 24.9ms | Allocations: 450)
+  Rendered groups/index.html.erb within layouts/application (Duration: 59.0ms | Allocations: 1597)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1529.4ms | Allocations: 8395)
+Completed 200 OK in 1567ms (Views: 1535.2ms | ActiveRecord: 4.6ms | Allocations: 9632)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 21:01:10 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (12.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 12.5ms | Allocations: 449)
+  Rendered groups/index.html.erb within layouts/application (Duration: 84.8ms | Allocations: 1598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27648.3ms | Allocations: 36364)
+Completed 200 OK in 27685ms (Views: 27655.9ms | ActiveRecord: 12.2ms | Allocations: 37608)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 21:02:55 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (10.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 6.9ms | Allocations: 293)
+  Rendered groups/index.html.erb within layouts/application (Duration: 38.7ms | Allocations: 1178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13925.2ms | Allocations: 34382)
+Completed 200 OK in 14012ms (Views: 13916.3ms | ActiveRecord: 10.6ms | Allocations: 34907)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 21:03:36 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (5.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 2.9ms | Allocations: 288)
+  Rendered groups/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 1172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13756.8ms | Allocations: 35367)
+Completed 200 OK in 13800ms (Views: 13755.1ms | ActiveRecord: 5.8ms | Allocations: 35891)
+
+
+Started GET "/groups" for 127.0.0.1 at 2021-04-23 21:04:13 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (7.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  ↳ app/views/groups/index.html.erb:3
+  Rendered collection of groups/_group.html.erb [4 times] (Duration: 47.5ms | Allocations: 288)
+  Rendered groups/index.html.erb within layouts/application (Duration: 71.5ms | Allocations: 1172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 146.2ms | Allocations: 7835)
+Completed 200 OK in 165ms (Views: 151.8ms | ActiveRecord: 7.6ms | Allocations: 8360)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-23 21:07:24 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 65.3ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.9ms | Allocations: 6799)
+Completed 200 OK in 220ms (Views: 190.5ms | ActiveRecord: 0.0ms | Allocations: 7678)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:07:31 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 224.8ms | Allocations: 419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 288.0ms | Allocations: 7018)
+Completed 200 OK in 309ms (Views: 294.2ms | ActiveRecord: 0.0ms | Allocations: 7900)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:09:09 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16738.5ms | Allocations: 58965)
+Completed 200 OK in 16745ms (Views: 16743.3ms | ActiveRecord: 0.0ms | Allocations: 59342)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:09:56 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25847.8ms | Allocations: 58029)
+Completed 200 OK in 25891ms (Views: 25881.6ms | Allocations: 58404)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:10:33 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15557.4ms | Allocations: 58229)
+Completed 200 OK in 15560ms (Views: 15559.6ms | Allocations: 58605)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:11:23 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14978.7ms | Allocations: 58389)
+Completed 200 OK in 15107ms (Views: 15103.2ms | Allocations: 58764)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:11:49 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 31.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15085.6ms | Allocations: 58271)
+Completed 200 OK in 15093ms (Views: 15092.6ms | Allocations: 58647)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:12:37 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11446.8ms | Allocations: 57490)
+Completed 200 OK in 11456ms (Views: 11454.5ms | Allocations: 57866)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:13:19 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11603.3ms | Allocations: 59316)
+Completed 200 OK in 11612ms (Views: 11610.6ms | Allocations: 59691)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:14:07 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13385.4ms | Allocations: 57910)
+Completed 200 OK in 13400ms (Views: 13398.8ms | Allocations: 58285)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:14:40 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11807.1ms | Allocations: 58227)
+Completed 200 OK in 11810ms (Views: 11809.2ms | Allocations: 58602)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:15:06 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10933.6ms | Allocations: 60522)
+Completed 200 OK in 10939ms (Views: 10937.8ms | Allocations: 60897)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:17:00 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18832.9ms | Allocations: 58857)
+Completed 200 OK in 18840ms (Views: 18835.7ms | Allocations: 59232)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:17:40 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12303.6ms | Allocations: 57306)
+Completed 200 OK in 12310ms (Views: 12308.9ms | Allocations: 57682)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:18:09 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13377.4ms | Allocations: 58255)
+Completed 200 OK in 13389ms (Views: 13381.8ms | Allocations: 58631)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:18:50 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9877.0ms | Allocations: 57985)
+Completed 200 OK in 9886ms (Views: 9885.6ms | Allocations: 58360)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:19:15 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12617.6ms | Allocations: 59081)
+Completed 200 OK in 12623ms (Views: 12622.5ms | Allocations: 59457)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:19:43 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11438.2ms | Allocations: 57329)
+Completed 200 OK in 11456ms (Views: 11446.9ms | Allocations: 57704)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:20:07 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12841.0ms | Allocations: 59556)
+Completed 200 OK in 12847ms (Views: 12846.0ms | Allocations: 59931)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:20:46 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11096.9ms | Allocations: 57964)
+Completed 200 OK in 11103ms (Views: 11102.3ms | Allocations: 58339)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:21:15 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9469.1ms | Allocations: 59546)
+Completed 200 OK in 9474ms (Views: 9473.3ms | Allocations: 59921)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:23:08 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15665.6ms | Allocations: 59354)
+Completed 200 OK in 15681ms (Views: 15679.2ms | Allocations: 59729)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:24:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22814.7ms | Allocations: 58407)
+Completed 200 OK in 22858ms (Views: 22856.8ms | Allocations: 58782)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:25:36 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 25.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15289.5ms | Allocations: 58381)
+Completed 200 OK in 15320ms (Views: 15302.4ms | Allocations: 58756)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:26:21 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23218.8ms | Allocations: 58429)
+Completed 200 OK in 23224ms (Views: 23223.1ms | Allocations: 58805)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:27:17 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14232.4ms | Allocations: 58864)
+Completed 200 OK in 14249ms (Views: 14248.0ms | Allocations: 59240)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:27:44 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10047.2ms | Allocations: 59147)
+Completed 200 OK in 10056ms (Views: 10054.4ms | Allocations: 59523)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 21:28:07 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 50.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13227.7ms | Allocations: 58247)
+Completed 200 OK in 13245ms (Views: 13230.5ms | Allocations: 58622)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:03:07 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 209.4ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33460.5ms | Allocations: 57897)
+Completed 200 OK in 33866ms (Views: 33608.2ms | Allocations: 58990)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:03:56 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38332.6ms | Allocations: 75282)
+Completed 200 OK in 38334ms (Views: 38333.5ms | Allocations: 75659)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:04:51 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16641.2ms | Allocations: 59610)
+Completed 200 OK in 16650ms (Views: 16648.3ms | Allocations: 59986)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:05:19 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17057.1ms | Allocations: 58665)
+Completed 200 OK in 17064ms (Views: 17059.3ms | Allocations: 59040)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:05:47 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 120.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12702.2ms | Allocations: 57716)
+Completed 200 OK in 12818ms (Views: 12783.7ms | Allocations: 58092)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:07:17 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20189.9ms | Allocations: 56631)
+Completed 200 OK in 20206ms (Views: 20203.7ms | Allocations: 57006)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-23 22:09:10 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17088.4ms | Allocations: 59783)
+Completed 200 OK in 17107ms (Views: 17100.7ms | Allocations: 60158)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-26 08:24:35 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 164.7ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29007.6ms | Allocations: 58032)
+Completed 200 OK in 29066ms (Views: 29030.3ms | Allocations: 58407)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-26 08:26:03 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25876.1ms | Allocations: 58924)
+Completed 200 OK in 25884ms (Views: 25880.5ms | Allocations: 59300)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-26 08:27:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"name"=>"Jeff"}, "commit"=>"Log in"}
+  [1m[36mUser Load (114.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 4988ms (ActiveRecord: 1308.8ms | Allocations: 4309)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2021-04-26 08:27:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 296.5ms | Allocations: 1083)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 500.2ms | Allocations: 7647)
+Completed 200 OK in 1099ms (Views: 602.1ms | ActiveRecord: 17.1ms | Allocations: 9320)
+
+
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:28:36 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (171.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (30.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 679.6ms | Allocations: 4772)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 3087.2ms | Allocations: 11521)
+  Rendered layout layouts/application.html.erb (Duration: 3093.7ms | Allocations: 11585)
+Completed 500 Internal Server Error in 3435ms (ActiveRecord: 707.8ms | Allocations: 13224)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `transaction' for #<ActionView::Base:0x0000000000f208>
+Did you mean?  @transactions):
+    1: <a href="<%= transaction_url(transaction.id) %>" class="text-decoration-none">
+    2:   <div class="box-hvr card mb-3 mx-3 d-flex flex-row">
+    3:     <div class="img-frame border border-warning rounded my-auto ml-2">
+    4:      <%= transaction_group %>
+    5:     </div>
+    6:     <div class="right-content flex-grow-1">
+    7:       <div class="top-content d-flex p-3 justify-content-between">
+  
+app/helpers/transactions_helper.rb:3:in `transaction_group'
+app/views/transactions/_transaction.html.erb:4
+app/views/transactions/index.html.erb:15
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:21 +0100
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:22 +0100
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:28 +0100
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:30 +0100
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:32 +0100
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:30:41 +0100
+Started POST "/__web_console/repl_sessions/4f8f7ae45aa8855e69adc339fbb9f0e7/trace" for 127.0.0.1 at 2021-04-26 08:30:48 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (5.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 9.7ms | Allocations: 1146)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 761.7ms | Allocations: 9925)
+  Rendered layout layouts/application.html.erb (Duration: 764.9ms | Allocations: 9989)
+Completed 500 Internal Server Error in 1522ms (ActiveRecord: 414.2ms | Allocations: 17116)
+
+
+  
+ActionView::Template::Error (The method .group() must contain arguments.):
+    1: <a href="<%= transaction_url(transaction.id) %>" class="text-decoration-none">
+    2:   <div class="box-hvr card mb-3 mx-3 d-flex flex-row">
+    3:     <div class="img-frame border border-warning rounded my-auto ml-2">
+    4:      <%= transaction_group %>
+    5:     </div>
+    6:     <div class="right-content flex-grow-1">
+    7:       <div class="top-content d-flex p-3 justify-content-between">
+  
+app/helpers/transactions_helper.rb:3:in `transaction_group'
+app/views/transactions/_transaction.html.erb:4
+app/views/transactions/index.html.erb:15
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:31:31 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (8.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered shared/_image.html.erb (Duration: 128.3ms | Allocations: 4622)
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 140.5ms | Allocations: 4905)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 345.9ms | Allocations: 13682)
+  Rendered layout layouts/application.html.erb (Duration: 350.3ms | Allocations: 13746)
+Completed 500 Internal Server Error in 504ms (ActiveRecord: 107.3ms | Allocations: 20609)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `transaction' for #<ActionView::Base:0x00000000012188>
+Did you mean?  @transactions):
+    1: <img src="<%= transaction.group.icon %>" alt="" class="">
+  
+app/views/shared/_image.html.erb:1
+app/helpers/transactions_helper.rb:4:in `transaction_group'
+app/views/transactions/_transaction.html.erb:4
+app/views/transactions/index.html.erb:15
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:33:18 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (26.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered shared/_image.html.erb (Duration: 7.6ms | Allocations: 1414)
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 44.1ms | Allocations: 1923)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 187.4ms | Allocations: 5002)
+  Rendered layout layouts/application.html.erb (Duration: 189.0ms | Allocations: 5066)
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 66.4ms | Allocations: 6912)
+
+
+  
+ActionView::Template::Error (The method .group() must contain arguments.):
+    1: <img src="<%= @transactions.group.icon %>" alt="" class="">
+  
+app/views/shared/_image.html.erb:1
+app/helpers/transactions_helper.rb:4:in `transaction_group'
+app/views/transactions/_transaction.html.erb:4
+app/views/transactions/index.html.erb:15
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:33:48 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (12.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered shared/_image.html.erb (Duration: 340.2ms | Allocations: 3239)
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 356.1ms | Allocations: 3748)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 437.3ms | Allocations: 6825)
+  Rendered layout layouts/application.html.erb (Duration: 442.7ms | Allocations: 6889)
+Completed 500 Internal Server Error in 484ms (ActiveRecord: 37.8ms | Allocations: 8732)
+
+
+  
+ActionView::Template::Error (undefined method `icon' for #<Transaction::ActiveRecord_Relation:0x00007f2add1d1f50>):
+    1: <img src="<%= @transactions.icon %>" alt="" class="">
+  
+app/views/shared/_image.html.erb:1
+app/helpers/transactions_helper.rb:4:in `transaction_group'
+app/views/transactions/_transaction.html.erb:4
+app/views/transactions/index.html.erb:15
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:34:07 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (18.5ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (13.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered shared/_image.html.erb (Duration: 1.2ms | Allocations: 122)
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 44.4ms | Allocations: 719)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 152.6ms | Allocations: 3840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 570.5ms | Allocations: 10613)
+Completed 200 OK in 620ms (Views: 541.8ms | ActiveRecord: 53.3ms | Allocations: 12485)
+
+
+Started GET "/transactions" for 127.0.0.1 at 2021-04-26 08:34:09 +0100
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT SUM("transactions"."amount") FROM "transactions" LEFT OUTER JOIN "users" ON "users"."id" = "transactions"."user_id" LEFT OUTER JOIN "groups" ON "groups"."id" = "transactions"."group_id" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:12
+  [1m[36mTransaction Load (10.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/views/transactions/index.html.erb:15
+  Rendered shared/_image.html.erb (Duration: 0.4ms | Allocations: 40)
+  Rendered collection of transactions/_transaction.html.erb [1 times] (Duration: 8.6ms | Allocations: 286)
+  Rendered transactions/index.html.erb within layouts/application (Duration: 99.4ms | Allocations: 3110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 286.8ms | Allocations: 9720)
+Completed 200 OK in 322ms (Views: 260.1ms | ActiveRecord: 40.0ms | Allocations: 10876)
+
+
