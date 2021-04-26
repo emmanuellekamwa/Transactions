@@ -1,7 +1,4 @@
 <% provide(:title, 'New Transaction') %>
-<nav class="navbar navbar-dark bg-primary">
-    <p class="text-center">TRANSACTIONS</p>
-</nav>
 <body class="body">
 <%= form_for @transaction, html: { class: "forms" } do |f| %>
   <%= f.text_field :name, class: "form-control", placeholder: "Name" %>

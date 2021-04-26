@@ -13,9 +13,11 @@ body {
     background-color: #fafafa;
 }
 
-.text-center {
+.center {
     padding-top: 16px;
-    font-size: 2em;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 300px;
 }
 
 .amount {
@@ -36,15 +38,15 @@ body {
     margin-left: 20px;
 }
 
-.link-btn {
+.link-btns {
     position: relative;
-    left: 90px;
-    top: 50px;
+    right: 10px;
+    bottom: 50px;
 }
 
 .forms {
     width: 70%;
-    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .form-control {
@@ -58,9 +60,8 @@ body {
 
 .btn {
     margin-top: 35px;
-    margin-left: 230px;
 }
 
-.link-btns {
-   margin: 0px 0px 20px 300px;
+.link-btn {
+   margin: 0px 160px 140px 0px;
 }
