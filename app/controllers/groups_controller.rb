@@ -1,5 +1,6 @@
 class GroupsController < ApplicationController
   include GroupsHelper
+  before_action
 
   def new
     @icons = icons

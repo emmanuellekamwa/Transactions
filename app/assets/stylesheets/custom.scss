@@ -33,7 +33,7 @@ $primary: #3778c2;
 
 .user {
   position: relative;
-  left: 70px;
+  left: 120px;
 }
 
 .login {
@@ -46,17 +46,16 @@ $primary: #3778c2;
 }
 
 .fields {
-  margin-top: 50px;
-  margin-left: 50px;
   width: 70%;
+  margin-left: 140px;
+  margin-bottom: 100px;
 }
 
 .home_buttons {
   width: 50%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: 25px;
+  margin-left: 160px;
 }
 
 #o-form {
