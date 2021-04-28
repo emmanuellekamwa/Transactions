@@ -17131,3 +17131,14 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 73230ms (Views: 72816.8ms | ActiveRecord: 149.8ms | Allocations: 172300)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-28 09:50:22 +0100
+  [1m[35m (39.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 27.4ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3370.1ms | Allocations: 17797)
+Completed 200 OK in 3507ms (Views: 3418.5ms | ActiveRecord: 0.0ms | Allocations: 20434)
+
+
