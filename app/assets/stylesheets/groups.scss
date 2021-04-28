@@ -5,19 +5,19 @@
 .grp-sel {
   margin-left: 12px;
 }
-  
+
 .icon-select {
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  
+
   li {
     width: 20%;
     background-color: #fff;
-  
+
     input {
       display: none;
-  
+
       &:checked + label {
         background-color: #dae0e5;
       }
@@ -46,11 +46,11 @@
 .control-form {
   margin-left: 190px;
 }
-  
+
 .grp-img {
   filter: blur(4px) opacity(25%);
 }
-  
+
 .date {
   min-width: 52px;
 }

@@ -12,7 +12,7 @@ $primary: #3778c2;
 
   #subcontainer {
     height: calc(100% - 56px);
-    font-family: Proxima Nova bold;
+    font-family: 'Proxima Nova', bold;
     max-width: 660px;
   }
 }
@@ -42,7 +42,7 @@ $primary: #3778c2;
 }
 
 .form {
-  margin-left: 100px; 
+  margin-left: 100px;
 }
 
 .fields {
@@ -94,7 +94,6 @@ $primary: #3778c2;
   }
 }
 
-
 // All bottom buttons
 .link-btn {
   display: inline-grid;
@@ -112,4 +111,3 @@ img {
   height: 100px;
   width: 100px;
 }
-
