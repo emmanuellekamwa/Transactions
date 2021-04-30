@@ -18230,3 +18230,268 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 145ms (Views: 87.1ms | ActiveRecord: 14.3ms | Allocations: 9370)
 
 
+Started GET "/users/9" for 127.0.0.1 at 2021-04-30 10:02:57 +0100
+  [1m[35m (36.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered users/show.html.erb within layouts/application (Duration: 33.8ms | Allocations: 1314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19454.6ms | Allocations: 42163)
+Completed 200 OK in 19877ms (Views: 19608.2ms | ActiveRecord: 80.8ms | Allocations: 50959)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-04-30 11:02:50 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (Allocations: 301)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-30 11:02:50 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.5ms | Allocations: 6904)
+Completed 200 OK in 121ms (Views: 119.3ms | Allocations: 7782)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:14:09 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 96.1ms | Allocations: 2772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (37.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 414.3ms | Allocations: 4971)
+  Rendered layout layouts/application.html.erb (Duration: 582.5ms | Allocations: 14408)
+Completed 200 OK in 593ms (Views: 588.4ms | ActiveRecord: 331.2ms | Allocations: 15294)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:19:53 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 440.5ms | Allocations: 4770)
+  Rendered layout layouts/application.html.erb (Duration: 15348.6ms | Allocations: 63304)
+Completed 200 OK in 15354ms (Views: 15145.9ms | ActiveRecord: 205.9ms | Allocations: 63684)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-30 11:24:31 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.4ms | Allocations: 6668)
+Completed 200 OK in 126ms (Views: 124.2ms | ActiveRecord: 0.0ms | Allocations: 7048)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:25:18 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 73.4ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 237.5ms | Allocations: 7890)
+Completed 200 OK in 251ms (Views: 214.4ms | ActiveRecord: 30.7ms | Allocations: 8267)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:25:32 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 125.6ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 23271.0ms | Allocations: 58447)
+Completed 200 OK in 23306ms (Views: 23270.9ms | ActiveRecord: 12.3ms | Allocations: 58822)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:26:27 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 64.5ms | Allocations: 1059)
+  Rendered layout layouts/application.html.erb (Duration: 24197.6ms | Allocations: 59289)
+Completed 200 OK in 24204ms (Views: 24177.3ms | ActiveRecord: 25.3ms | Allocations: 59668)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:35:13 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 883.6ms | Allocations: 4784)
+  Rendered layout layouts/application.html.erb (Duration: 34091.9ms | Allocations: 62153)
+Completed 200 OK in 34164ms (Views: 34123.2ms | ActiveRecord: 533.5ms | Allocations: 62528)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:51:44 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 82.8ms | Allocations: 424)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 308.9ms | Allocations: 4898)
+  Rendered layout layouts/application.html.erb (Duration: 565.2ms | Allocations: 12464)
+Completed 200 OK in 690ms (Views: 622.5ms | ActiveRecord: 152.3ms | Allocations: 13559)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 11:56:57 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 292.0ms | Allocations: 4762)
+  Rendered layout layouts/application.html.erb (Duration: 14298.3ms | Allocations: 62479)
+Completed 200 OK in 14307ms (Views: 14305.0ms | ActiveRecord: 133.2ms | Allocations: 62855)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 12:02:42 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 27.6ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 13065.8ms | Allocations: 58301)
+Completed 200 OK in 13071ms (Views: 13062.0ms | ActiveRecord: 8.3ms | Allocations: 58676)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 12:03:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 47.5ms | Allocations: 1058)
+  Rendered layout layouts/application.html.erb (Duration: 11694.4ms | Allocations: 58766)
+Completed 200 OK in 11705ms (Views: 11693.4ms | ActiveRecord: 9.2ms | Allocations: 59144)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 12:04:43 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 21.5ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 10701.7ms | Allocations: 59188)
+Completed 200 OK in 10708ms (Views: 10700.9ms | ActiveRecord: 6.2ms | Allocations: 59563)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 13:21:01 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1855.8ms | Allocations: 3574)
+  Rendered layout layouts/application.html.erb (Duration: 1858.1ms | Allocations: 3640)
+Completed 500 Internal Server Error in 1974ms (Allocations: 4709)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, 'Login') %>
+
+<div class="title">
+<h1 class="text-center">Log In</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6 form">
+    <%= form_for(:session, url: login_path, class="login-form") do |f| %>
+
+      <%= f.text_field :name, class: 'form-controls', placeholder: 'name' %>
+
+      <%= f.submit "Log in", class: "login btn btn-primary" %>
+
+      <p class="link">New user? <%= link_to "Sign up now!", signup_path %></p>
+    <% end %>
+  </div>
+</div>
+):
+1:    <% provide(:title, 'Login') %>
+2:    
+3:    <div class="title">
+4:    <h1 class="text-center">Log In</h1>
+5:    </div>
+6:    
+7:    <div class="row">
+8:      <div class="col-md-6 form">
+9:        <%= form_for(:session, url: login_path, class="login-form") do |f| %>
+10:    
+11:          <%= f.text_field :name, class: 'form-controls', placeholder: 'name' %>
+12:    
+13:          <%= f.submit "Log in", class: "login btn btn-primary" %>
+14:    
+15:          <p class="link">New user? <%= link_to "Sign up now!", signup_path %></p>
+16:        <% end %>
+17:      </div>
+18:    </div>
+  
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected '='
+app/views/sessions/new.html.erb:9: syntax error, unexpected ')', expecting `end'
+app/views/sessions/new.html.erb:20: syntax error, unexpected `end', expecting end-of-input
+Started GET "/login" for 127.0.0.1 at 2021-04-30 13:21:59 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 38.2ms | Allocations: 473)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 622.6ms | Allocations: 5096)
+  Rendered layout layouts/application.html.erb (Duration: 887.5ms | Allocations: 12939)
+Completed 200 OK in 944ms (Views: 899.8ms | ActiveRecord: 358.9ms | Allocations: 14129)
+
+
