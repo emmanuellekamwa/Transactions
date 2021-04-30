@@ -18495,3 +18495,47 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 944ms (Views: 899.8ms | ActiveRecord: 358.9ms | Allocations: 14129)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-30 16:53:41 +0100
+  [1m[35m (16.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 32.6ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16748.9ms | Allocations: 45302)
+Completed 200 OK in 16899ms (Views: 16791.1ms | ActiveRecord: 0.0ms | Allocations: 47941)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-30 16:54:15 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12690.7ms | Allocations: 58170)
+Completed 200 OK in 12698ms (Views: 12696.8ms | ActiveRecord: 0.0ms | Allocations: 58551)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-30 16:55:24 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16162.0ms | Allocations: 57366)
+Completed 200 OK in 16168ms (Views: 16166.9ms | ActiveRecord: 0.0ms | Allocations: 57741)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-30 16:56:28 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 207.2ms | Allocations: 560)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1422.5ms | Allocations: 4665)
+  Rendered layout layouts/application.html.erb (Duration: 1692.1ms | Allocations: 11949)
+Completed 200 OK in 1766ms (Views: 1057.8ms | ActiveRecord: 705.8ms | Allocations: 12837)
+
+
