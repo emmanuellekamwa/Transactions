@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @user.avatar.attach(io: File.open('app/assets/images/avatar.jpeg'), filename: 'avatar.jpeg', content_type: 'image/jpeg')
   end
 
   def logout
