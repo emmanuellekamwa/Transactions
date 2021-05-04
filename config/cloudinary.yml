@@ -1,0 +1,6 @@
+production: 
+  cloud_name: dwnufhxk8
+  api_key: 888541251882276
+  api_secret: KI1CGT6DGj23CI19D4csDKXU9Wwo
+  secure: true
+  cdc_subdomain: true
