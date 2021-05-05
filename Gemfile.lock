@@ -250,7 +250,7 @@ DEPENDENCIES
   bootstrap (~> 4.0)
   bootstrap-sass (~> 3.3.6)
   byebug
-  capybara (>= 3.26)
+  capybara
   cloudinary
   faker
   hirb
