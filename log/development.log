@@ -19225,3 +19225,75 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 339)
 
 
+Started DELETE "/logout" for 127.0.0.1 at 2021-05-05 15:57:09 +0100
+  [1m[35m (52.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 118ms (ActiveRecord: 0.0ms | Allocations: 1211)
+
+
+Started GET "/" for 127.0.0.1 at 2021-05-05 15:57:12 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 76.7ms | Allocations: 347)
+  Rendered layout layouts/application.html.erb (Duration: 36502.5ms | Allocations: 17353)
+Completed 500 Internal Server Error in 36607ms (ActiveRecord: 0.0ms | Allocations: 19071)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "/": expected 1 selector or at-rule, was "/*"
+        on line 1:1 of app/assets/stylesheets/application.css.scss
+>> /*
+
+   ^
+):
+    14:     <meta name="description" property="og:description" content="Web-app to store transactions organized by group, and viewable amongst all users. Built with Ruby, Rails, PostgreSQL, HTML5, CSS3, and Bootstrap.">
+    15:     <meta name="author" content="Alfredo C.">
+    16: 
+    17:    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18:    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    19:  </head>
+    20: 
+  
+app/assets/stylesheets/application.css.scss:1
+app/views/layouts/application.html.erb:17
+Started GET "/" for 127.0.0.1 at 2021-05-05 16:00:28 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 19.3ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 10577.8ms | Allocations: 6026)
+Completed 500 Internal Server Error in 10703ms (ActiveRecord: 0.0ms | Allocations: 6462)
+
+
+  
+ActionView::Template::Error (CssSyntaxError: /home/kamwa/Transactions/app/assets/stylesheets/application.css:1:1: Unclosed comment
+
+> 1 | /*
+    | ^
+  2 |  * This is a manifest file that'll be compiled into application.css, which will include all the files
+  3 |  * listed below.
+):
+    14:     <meta name="description" property="og:description" content="Web-app to store transactions organized by group, and viewable amongst all users. Built with Ruby, Rails, PostgreSQL, HTML5, CSS3, and Bootstrap.">
+    15:     <meta name="author" content="Alfredo C.">
+    16: 
+    17:    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18:    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    19:  </head>
+    20: 
+  
+(execjs):23752:8
+app/views/layouts/application.html.erb:17
+Started GET "/" for 127.0.0.1 at 2021-05-05 16:02:51 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 31.3ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 19205.7ms | Allocations: 75921)
+Completed 200 OK in 19212ms (Views: 19210.1ms | Allocations: 76309)
+
+
