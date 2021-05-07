@@ -19297,3 +19297,27 @@ Processing by StaticController#home as HTML
 Completed 200 OK in 19212ms (Views: 19210.1ms | Allocations: 76309)
 
 
+Started GET "/" for 127.0.0.1 at 2021-05-07 17:25:10 +0100
+  [1m[35m (63.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 33.5ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 41.3ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 56865.2ms | Allocations: 59801)
+Completed 200 OK in 57019ms (Views: 56918.1ms | ActiveRecord: 0.0ms | Allocations: 62381)
+
+
+Started GET "/" for 127.0.0.1 at 2021-05-07 18:01:03 +0100
+  [1m[35m (22.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 45.3ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 57.5ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 1457.2ms | Allocations: 17996)
+Completed 200 OK in 1640ms (Views: 1523.3ms | ActiveRecord: 0.0ms | Allocations: 20634)
+
+
