@@ -19366,3 +19366,73 @@ Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b
 Completed 200 OK in 88340ms (Views: 88325.4ms | ActiveRecord: 663.6ms | Allocations: 91271)
 
 
+Started GET "/login" for 127.0.0.1 at 2021-05-10 09:29:18 +0100
+  [1m[35m (30.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 25.0ms | Allocations: 698)
+  Rendered layout layouts/application.html.erb (Duration: 505.3ms | Allocations: 16348)
+Completed 500 Internal Server Error in 663ms (ActiveRecord: 0.0ms | Allocations: 18954)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "/": expected 1 selector or at-rule, was "/*"
+        on line 1:1 of app/assets/stylesheets/application.css.scss
+>> /*
+
+   ^
+):
+    14:     <meta name="description" property="og:description" content="Web-app to store transactions organized by group, and viewable amongst all users. Built with Ruby, Rails, PostgreSQL, HTML5, CSS3, and Bootstrap.">
+    15:     <meta name="author" content="Alfredo C.">
+    16: 
+    17:    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18:    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    19:  </head>
+    20: 
+  
+app/assets/stylesheets/application.css.scss:1
+app/views/layouts/application.html.erb:17
+Started GET "/login" for 127.0.0.1 at 2021-05-10 09:29:57 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 1122.3ms | Allocations: 4443)
+Completed 500 Internal Server Error in 1132ms (ActiveRecord: 0.0ms | Allocations: 4879)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-sprockets.
+        on line 15:1 of app/assets/stylesheets/application.css.sass
+>> @import "bootstrap-sprockets";
+
+   ^
+):
+    14:     <meta name="description" property="og:description" content="Web-app to store transactions organized by group, and viewable amongst all users. Built with Ruby, Rails, PostgreSQL, HTML5, CSS3, and Bootstrap.">
+    15:     <meta name="author" content="Alfredo C.">
+    16: 
+    17:    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18:    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    19:  </head>
+    20: 
+  
+app/assets/stylesheets/application.css.sass:15
+app/views/layouts/application.html.erb:17
+Started POST "/__web_console/repl_sessions/44161ea0be087524065aa0507c4aae82/trace" for 127.0.0.1 at 2021-05-10 09:30:36 +0100
+Started POST "/__web_console/repl_sessions/44161ea0be087524065aa0507c4aae82/trace" for 127.0.0.1 at 2021-05-10 09:32:21 +0100
+Started POST "/__web_console/repl_sessions/44161ea0be087524065aa0507c4aae82/trace" for 127.0.0.1 at 2021-05-10 09:32:25 +0100
+Started GET "/login" for 127.0.0.1 at 2021-05-10 09:34:36 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 87.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (65.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:8:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 22927.7ms | Allocations: 11194)
+  Rendered layouts/_flash_messages.html.erb (Duration: 141.5ms | Allocations: 207)
+  Rendered layout layouts/application.html.erb (Duration: 82462.6ms | Allocations: 71194)
+Completed 200 OK in 82566ms (Views: 77466.8ms | ActiveRecord: 5034.0ms | Allocations: 71577)
+
+
