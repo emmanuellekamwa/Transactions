@@ -2160,3 +2160,1661 @@ Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 208
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (28.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-10 13:09:52 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 12.3ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 1744.7ms | Allocations: 218457)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/kamwa/Transactions/public/packs-test
+[Webpacker] Hash: 00914da054b109eb58f1
+Version: webpack 4.46.0
+Time: 6798ms
+Built at: 05/10/2021 1:10:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3c43a2bcb02b1e77150e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3c43a2bcb02b1e77150e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-3c43a2bcb02b1e77150e.js js/application-3c43a2bcb02b1e77150e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  [1m[36mUser Load (107.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 132.6ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 15.5ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 24061.5ms | Allocations: 221939)
+Completed 200 OK in 25897ms (Views: 24020.4ms | ActiveRecord: 311.8ms | Allocations: 230954)
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-10 13:10:18 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (65.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 140.0ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 152.7ms | Allocations: 1959)
+Completed 200 OK in 156ms (Views: 87.2ms | ActiveRecord: 66.4ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-10 13:10:18 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 202.0ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 10.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 219.1ms | Allocations: 2400)
+Completed 200 OK in 295ms (Views: 222.7ms | ActiveRecord: 9.6ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-10 13:10:19 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 102.6ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 4.9ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 1.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 113.0ms | Allocations: 1659)
+Completed 200 OK in 132ms (Views: 115.5ms | ActiveRecord: 0.3ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-10 13:10:19 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 46.8ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 1288)
+Completed 200 OK in 71ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (203.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:10:19.444875"], ["updated_at", "2021-05-10 12:10:19.444875"]]
+  [1m[36mTRANSACTION (141.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mGroup Create (25.3ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 25], ["created_at", "2021-05-10 12:10:20.173262"], ["updated_at", "2021-05-10 12:10:20.173262"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 19], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mGroup Create (54.4ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 25], ["created_at", "2021-05-10 12:10:20.278837"], ["updated_at", "2021-05-10 12:10:20.278837"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 25], ["created_at", "2021-05-10 12:10:20.352843"], ["updated_at", "2021-05-10 12:10:20.352843"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 21], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (37.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 25], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (52.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (6.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:10:20.578856"], ["updated_at", "2021-05-10 12:10:20.578856"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (20.9ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTransaction Create (24.9ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 26], ["created_at", "2021-05-10 12:10:20.636754"], ["updated_at", "2021-05-10 12:10:20.636754"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 19], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (5.2ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTransaction Create (32.3ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 26], ["created_at", "2021-05-10 12:10:20.725119"], ["updated_at", "2021-05-10 12:10:20.725119"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTransaction Create (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 26], ["created_at", "2021-05-10 12:10:20.797511"], ["updated_at", "2021-05-10 12:10:20.797511"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 21], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (4.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 26], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (3.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:10:20.873804"], ["updated_at", "2021-05-10 12:10:20.873804"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 27], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (6.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:10:20.939159"], ["updated_at", "2021-05-10 12:10:20.939159"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (4.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-10 13:49:47 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 12.4ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 1028.3ms | Allocations: 218461)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 25.2ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 14.3ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 1172.4ms | Allocations: 221227)
+Completed 200 OK in 3314ms (Views: 1195.3ms | ActiveRecord: 219.3ms | Allocations: 230179)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-10 13:49:51 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.4ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 30.0ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 1959)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 1.2ms | Allocations: 2433)
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-10 13:49:51 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 45.2ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 2400)
+Completed 200 OK in 108ms (Views: 56.1ms | ActiveRecord: 10.7ms | Allocations: 7016)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-10 13:49:51 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.9ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 1659)
+Completed 200 OK in 37ms (Views: 26.8ms | ActiveRecord: 0.4ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-10 13:49:51 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 10.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.7ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 1288)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (30.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:49:51.873403"], ["updated_at", "2021-05-10 12:49:51.873403"]]
+  [1m[36mTRANSACTION (20.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mGroup Create (13.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 29], ["created_at", "2021-05-10 12:49:51.978970"], ["updated_at", "2021-05-10 12:49:51.978970"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 22], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mGroup Create (3.4ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 29], ["created_at", "2021-05-10 12:49:52.042861"], ["updated_at", "2021-05-10 12:49:52.042861"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.6ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 29], ["created_at", "2021-05-10 12:49:52.072721"], ["updated_at", "2021-05-10 12:49:52.072721"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 24], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (5.0ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 29], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (13.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  [1m[36mTRANSACTION (12.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (1.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:49:52.218262"], ["updated_at", "2021-05-10 12:49:52.218262"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mTransaction Create (4.4ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 30], ["created_at", "2021-05-10 12:49:52.239825"], ["updated_at", "2021-05-10 12:49:52.239825"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 22], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (5.2ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mTransaction Create (4.3ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 30], ["created_at", "2021-05-10 12:49:52.310690"], ["updated_at", "2021-05-10 12:49:52.310690"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mTransaction Create (3.2ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 30], ["created_at", "2021-05-10 12:49:52.392073"], ["updated_at", "2021-05-10 12:49:52.392073"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 24], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 30], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  [1m[36mTRANSACTION (19.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (14.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:49:52.465589"], ["updated_at", "2021-05-10 12:49:52.465589"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 31], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "012345678901234567890123456789N"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "012345678901234567890123456789N"], ["created_at", "2021-05-10 12:49:52.640976"], ["updated_at", "2021-05-10 12:49:52.640976"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:49:52.959038"], ["updated_at", "2021-05-10 12:49:52.959038"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (29.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:49:53.007918"], ["updated_at", "2021-05-10 12:49:53.007918"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-10 13:51:45 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.8ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 521.9ms | Allocations: 218460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 9.3ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 1.4ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 542.9ms | Allocations: 221226)
+Completed 200 OK in 2644ms (Views: 545.9ms | ActiveRecord: 638.3ms | Allocations: 230178)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-10 13:51:47 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 1959)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 1.2ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-10 13:51:48 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (5.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 5.3ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 2400)
+Completed 200 OK in 84ms (Views: 25.3ms | ActiveRecord: 15.4ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-10 13:51:48 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 1659)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.3ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-10 13:51:48 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1288)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:51:48.278826"], ["updated_at", "2021-05-10 12:51:48.278826"]]
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 35], ["created_at", "2021-05-10 12:51:48.322097"], ["updated_at", "2021-05-10 12:51:48.322097"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 25], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mGroup Create (1.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 35], ["created_at", "2021-05-10 12:51:48.354857"], ["updated_at", "2021-05-10 12:51:48.354857"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.5ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 35], ["created_at", "2021-05-10 12:51:48.386432"], ["updated_at", "2021-05-10 12:51:48.386432"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 27], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 35], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  [1m[36mTRANSACTION (45.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:51:48.501453"], ["updated_at", "2021-05-10 12:51:48.501453"]]
+  [1m[36mTRANSACTION (72.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 36], ["created_at", "2021-05-10 12:51:48.586220"], ["updated_at", "2021-05-10 12:51:48.586220"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 25], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 36], ["created_at", "2021-05-10 12:51:48.628027"], ["updated_at", "2021-05-10 12:51:48.628027"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTransaction Create (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 36], ["created_at", "2021-05-10 12:51:48.670880"], ["updated_at", "2021-05-10 12:51:48.670880"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 27], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 36], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (2.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 36]]
+  [1m[36mTRANSACTION (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:51:48.739079"], ["updated_at", "2021-05-10 12:51:48.739079"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 37], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "012345678901234567890123456789N"], ["LIMIT", 1]]
+  [1m[36mUser Create (17.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "012345678901234567890123456789N"], ["created_at", "2021-05-10 12:51:48.786759"], ["updated_at", "2021-05-10 12:51:48.786759"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:51:48.830964"], ["updated_at", "2021-05-10 12:51:48.830964"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-10 13:58:06 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 1.0ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 529.6ms | Allocations: 218463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 10.1ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 2.5ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 553.2ms | Allocations: 221229)
+Completed 200 OK in 1800ms (Views: 554.7ms | ActiveRecord: 48.7ms | Allocations: 230197)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-10 13:58:08 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 1959)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 1.4ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-10 13:58:08 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 2400)
+Completed 200 OK in 62ms (Views: 18.8ms | ActiveRecord: 16.7ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-10 13:58:08 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.7ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 1659)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.6ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-10 13:58:08 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 7.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 1.4ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 1288)
+Completed 200 OK in 51ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (40.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:58:08.552143"], ["updated_at", "2021-05-10 12:58:08.552143"]]
+  [1m[36mTRANSACTION (57.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mGroup Create (4.4ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 40], ["created_at", "2021-05-10 12:58:08.692543"], ["updated_at", "2021-05-10 12:58:08.692543"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 28], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mGroup Create (1.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 40], ["created_at", "2021-05-10 12:58:08.809421"], ["updated_at", "2021-05-10 12:58:08.809421"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.8ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 40], ["created_at", "2021-05-10 12:58:08.846638"], ["updated_at", "2021-05-10 12:58:08.846638"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 30], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (13.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (4.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 40], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 40]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 12:58:09.008549"], ["updated_at", "2021-05-10 12:58:09.008549"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTransaction Create (24.8ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 41], ["created_at", "2021-05-10 12:58:09.029269"], ["updated_at", "2021-05-10 12:58:09.029269"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 28], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTransaction Create (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 41], ["created_at", "2021-05-10 12:58:09.088080"], ["updated_at", "2021-05-10 12:58:09.088080"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.1ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 41], ["created_at", "2021-05-10 12:58:09.130152"], ["updated_at", "2021-05-10 12:58:09.130152"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 30], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (4.6ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 41], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 41]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (6.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (3.5ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:58:09.200804"], ["updated_at", "2021-05-10 12:58:09.200804"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 42], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 12:58:09.264275"], ["updated_at", "2021-05-10 12:58:09.264275"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-10 14:01:48 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 0.9ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 707.0ms | Allocations: 218462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 8.3ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 725.9ms | Allocations: 221228)
+Completed 200 OK in 2243ms (Views: 733.8ms | ActiveRecord: 15.2ms | Allocations: 230224)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-10 14:01:51 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (4.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 5.0ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 1959)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 4.6ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-10 14:01:51 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2400)
+Completed 200 OK in 54ms (Views: 20.0ms | ActiveRecord: 10.5ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-10 14:01:51 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 1659)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.3ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-10 14:01:51 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 1288)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (4.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 13:01:51.328145"], ["updated_at", "2021-05-10 13:01:51.328145"]]
+  [1m[36mTRANSACTION (22.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 44], ["created_at", "2021-05-10 13:01:51.370087"], ["updated_at", "2021-05-10 13:01:51.370087"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 31], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 44], ["created_at", "2021-05-10 13:01:51.392942"], ["updated_at", "2021-05-10 13:01:51.392942"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.6ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 44], ["created_at", "2021-05-10 13:01:51.415415"], ["updated_at", "2021-05-10 13:01:51.415415"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 33], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 44], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 44]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-10 13:01:51.479844"], ["updated_at", "2021-05-10 13:01:51.479844"]]
+  [1m[36mTRANSACTION (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.0ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 45], ["created_at", "2021-05-10 13:01:51.504266"], ["updated_at", "2021-05-10 13:01:51.504266"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 31], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (7.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTransaction Create (16.7ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 45], ["created_at", "2021-05-10 13:01:51.546006"], ["updated_at", "2021-05-10 13:01:51.546006"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTransaction Create (6.0ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 45], ["created_at", "2021-05-10 13:01:51.599989"], ["updated_at", "2021-05-10 13:01:51.599989"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 33], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 45], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 45]]
+  [1m[36mTRANSACTION (17.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (1.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 13:01:51.667369"], ["updated_at", "2021-05-10 13:01:51.667369"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 46], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (7.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-10 13:01:51.700783"], ["updated_at", "2021-05-10 13:01:51.700783"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (75.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-11 09:56:44 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 7.5ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 1161.7ms | Allocations: 218458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (131.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 212.4ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 156.8ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 1909.9ms | Allocations: 221224)
+Completed 200 OK in 3641ms (Views: 1828.2ms | ActiveRecord: 332.8ms | Allocations: 230200)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-11 09:56:48 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (123.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 158.9ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 170.6ms | Allocations: 1959)
+Completed 200 OK in 174ms (Views: 47.8ms | ActiveRecord: 124.1ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-11 09:56:48 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 62.8ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 2400)
+Completed 200 OK in 120ms (Views: 72.2ms | ActiveRecord: 13.2ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-11 09:56:48 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 1659)
+Completed 200 OK in 48ms (Views: 29.1ms | ActiveRecord: 0.5ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-11 09:56:48 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 18.2ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 1288)
+Completed 200 OK in 42ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (115.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 08:56:49.063697"], ["updated_at", "2021-05-11 08:56:49.063697"]]
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (6.7ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mGroup Create (58.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 48], ["created_at", "2021-05-11 08:56:49.336433"], ["updated_at", "2021-05-11 08:56:49.336433"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 34], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.6ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 48], ["created_at", "2021-05-11 08:56:49.449906"], ["updated_at", "2021-05-11 08:56:49.449906"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 48], ["created_at", "2021-05-11 08:56:49.483127"], ["updated_at", "2021-05-11 08:56:49.483127"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (28.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 48], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (76.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 48]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 08:56:49.742568"], ["updated_at", "2021-05-11 08:56:49.742568"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (8.1ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTransaction Create (93.8ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 49], ["created_at", "2021-05-11 08:56:49.764181"], ["updated_at", "2021-05-11 08:56:49.764181"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 34], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTransaction Create (12.3ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 49], ["created_at", "2021-05-11 08:56:49.896733"], ["updated_at", "2021-05-11 08:56:49.896733"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTransaction Create (4.1ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 49], ["created_at", "2021-05-11 08:56:49.937732"], ["updated_at", "2021-05-11 08:56:49.937732"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 49], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 49]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (3.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.5ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 08:56:50.007946"], ["updated_at", "2021-05-11 08:56:50.007946"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 50], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 08:56:50.045705"], ["updated_at", "2021-05-11 08:56:50.045705"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (27.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (39.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-11 10:23:29 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 11.7ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 1970.2ms | Allocations: 218458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 21.5ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 18.8ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 2099.6ms | Allocations: 221224)
+Completed 200 OK in 4257ms (Views: 2190.8ms | ActiveRecord: 516.3ms | Allocations: 230190)
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-11 10:23:33 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 127.4ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 135.4ms | Allocations: 1959)
+Completed 200 OK in 140ms (Views: 136.0ms | ActiveRecord: 1.4ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-11 10:23:33 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 79.0ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 85.4ms | Allocations: 2400)
+Completed 200 OK in 133ms (Views: 87.9ms | ActiveRecord: 12.6ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-11 10:23:33 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 184)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 1854)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 1.2ms | Allocations: 2280)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-11 10:23:33 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 6.0ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 1659)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.4ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-11 10:23:34 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 32.9ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 1288)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (76.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 09:23:34.123988"], ["updated_at", "2021-05-11 09:23:34.123988"]]
+  [1m[36mTRANSACTION (51.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mGroup Create (56.9ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 52], ["created_at", "2021-05-11 09:23:34.339470"], ["updated_at", "2021-05-11 09:23:34.339470"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 37], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (5.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mGroup Create (3.0ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 52], ["created_at", "2021-05-11 09:23:34.485343"], ["updated_at", "2021-05-11 09:23:34.485343"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mGroup Create (7.8ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 52], ["created_at", "2021-05-11 09:23:34.518004"], ["updated_at", "2021-05-11 09:23:34.518004"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 39], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 52], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (21.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 52]]
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 09:23:34.687791"], ["updated_at", "2021-05-11 09:23:34.687791"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 53], ["created_at", "2021-05-11 09:23:34.712893"], ["updated_at", "2021-05-11 09:23:34.712893"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 37], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mTransaction Create (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 53], ["created_at", "2021-05-11 09:23:34.746699"], ["updated_at", "2021-05-11 09:23:34.746699"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mTransaction Create (6.0ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 53], ["created_at", "2021-05-11 09:23:34.770125"], ["updated_at", "2021-05-11 09:23:34.770125"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 39], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 53]]
+  [1m[36mTRANSACTION (26.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (5.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 09:23:34.846208"], ["updated_at", "2021-05-11 09:23:34.846208"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 54], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 09:23:34.870279"], ["updated_at", "2021-05-11 09:23:34.870279"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups/new" for 127.0.0.1 at 2021-05-11 10:24:20 +0100
+Processing by GroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered shared/_form_errors.html.erb (Duration: 1.2ms | Allocations: 184)
+  Rendered groups/new.html.erb within layouts/application (Duration: 597.2ms | Allocations: 218463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 8.0ms | Allocations: 826)
+  Rendered layouts/_flash_messages.html.erb (Duration: 1.1ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 613.4ms | Allocations: 221229)
+Completed 200 OK in 1840ms (Views: 615.9ms | ActiveRecord: 12.2ms | Allocations: 230256)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/groups" for 127.0.0.1 at 2021-05-11 10:24:22 +0100
+Processing by GroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" ORDER BY name[0m
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 13)
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 1959)
+Completed 200 OK in 29ms (Views: 21.5ms | ActiveRecord: 1.2ms | Allocations: 2433)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-11 10:24:22 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 2.6ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 2400)
+Completed 200 OK in 59ms (Views: 19.9ms | ActiveRecord: 13.0ms | Allocations: 7016)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/transactions/new" for 127.0.0.1 at 2021-05-11 10:24:22 +0100
+Processing by TransactionsController#new as HTML
+  [1m[36mGroup Load (2.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering transactions/new.html.erb within layouts/application
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered transactions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 184)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 1854)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 2.7ms | Allocations: 2280)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/login" for 127.0.0.1 at 2021-05-11 10:24:22 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 186)
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1659)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.3ms | Allocations: 2455)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2021-05-11 10:24:22 +0100
+Processing by StaticController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_flash_messages.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 1288)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2089)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 09:24:22.956026"], ["updated_at", "2021-05-11 09:24:22.956026"]]
+  [1m[36mTRANSACTION (21.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mGroup Create (1.3ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 56], ["created_at", "2021-05-11 09:24:22.993413"], ["updated_at", "2021-05-11 09:24:22.993413"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 40], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mGroup Create (0.7ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 56], ["created_at", "2021-05-11 09:24:23.024306"], ["updated_at", "2021-05-11 09:24:23.024306"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mGroup Create (2.8ms)[0m  [1m[32mINSERT INTO "groups" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Group01"], ["user_id", 56], ["created_at", "2021-05-11 09:24:23.040474"], ["updated_at", "2021-05-11 09:24:23.040474"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 AND "groups"."id" != $2 LIMIT $3[0m  [["name", "Group01"], ["id", 42], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "groups" WHERE "groups"."name" = $1 LIMIT $2[0m  [["name", "Group01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 56], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (2.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 56]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+  [1m[36mUser Create (23.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User"], ["created_at", "2021-05-11 09:24:23.111137"], ["updated_at", "2021-05-11 09:24:23.111137"]]
+  [1m[36mTRANSACTION (19.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 57], ["created_at", "2021-05-11 09:24:23.165773"], ["updated_at", "2021-05-11 09:24:23.165773"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 40], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mTransaction Create (0.6ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 57], ["created_at", "2021-05-11 09:24:23.193619"], ["updated_at", "2021-05-11 09:24:23.193619"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mTransaction Create (16.7ms)[0m  [1m[32mINSERT INTO "transactions" ("name", "description", "amount", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Transaction01"], ["description", "description for trans 01"], ["amount", 0.5], ["user_id", 57], ["created_at", "2021-05-11 09:24:23.226386"], ["updated_at", "2021-05-11 09:24:23.226386"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (5.1ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 AND "transactions"."id" != $2 LIMIT $3[0m  [["name", "Transaction01"], ["id", 42], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTransaction Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "transactions" WHERE "transactions"."name" = $1 LIMIT $2[0m  [["name", "Transaction01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 57], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 57]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 09:24:23.290854"], ["updated_at", "2021-05-11 09:24:23.290854"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["name", "User01"], ["id", 58], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User01"], ["created_at", "2021-05-11 09:24:23.318905"], ["updated_at", "2021-05-11 09:24:23.318905"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "User01"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m

@@ -13,7 +13,7 @@ To have access to this project on your local machine, follow the following steps
 - Install yarn
 - Run rails db:create and rails db:migrate for the database
 - Launch the server by typing rails server
-- Run tests using rspec
+- Run tests using bundle exec Rspec
 
 ## Built With
 

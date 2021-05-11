@@ -9,4 +9,10 @@ RSpec.feature 'TransactionFeatures', type: :feature do
     visit new_transaction_url
     expect(page).to have_content 'NEW TRANSACTION'
   end
+
+  it 'can create a new transaction' do
+    visit new_transaction_url
+    new_transaction_url
+    expect(page).to have_content 'transaction successfully created'
+  end
 end
