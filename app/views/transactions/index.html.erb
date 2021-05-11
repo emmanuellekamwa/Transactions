@@ -1,0 +1,17 @@
+<% provide(:title, 'Transactions') %>
+
+<body>
+<div>
+  <div class="amount">
+    <h5 class="text-muted mt-2">Total Amount</h5>
+    <p class="font-weight-bold">$<%= number_with_precision(@transactions.sum(:amount), :precision => 2) %></p>
+  </div>
+
+  <%= render @transactions %>
+</div>
+
+<%= link_to new_transaction_path, class: "link-btn btn
+                  btn-success" do %>
+  <span class="button">NEW TRANSACTION</span>
+<% end %>
+</body>

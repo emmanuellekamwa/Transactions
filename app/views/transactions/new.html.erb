@@ -1,0 +1,17 @@
+<% provide(:title, 'New Transaction') %>
+<body class="body">
+<%= form_for @transaction, html: { class: "forms" } do |f| %>
+  <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+  <%= f.text_area :description, class: "form-control", placeholder: "Description" %>
+
+  <div class="input-group">
+    <div class="input-group-prepend">
+    </div>
+    <%= f.number_field :amount, class: "form-control", placeholder: "Amount", min: "0", step: "0.01" %>
+  </div>
+
+  <%= collection_select(:transaction, :group_id, Group.all, :id, :name, { :prompt => 'Group' }, class: "form-control" ) %>
+ 
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+</body>

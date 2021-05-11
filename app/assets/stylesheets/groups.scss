@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'bootstrap';
+
+.grp-sel {
+  margin-left: 12px;
+}
+
+.icon-select {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+
+  li {
+    width: 20%;
+    background-color: #fff;
+
+    input {
+      display: none;
+
+      &:checked + label {
+        background-color: #dae0e5;
+      }
+    }
+  }
+}
+
+.link {
+  width: 70%;
+  position: relative;
+  left: -240px;
+}
+
+.head {
+  margin-left: 250px;
+}
+
+.linked {
+  width: 70%;
+  position: relative;
+  right: 115px;
+  bottom: 50px;
+  top: 5px;
+}
+
+.control-form {
+  margin-left: 190px;
+}
+
+.grp-img {
+  filter: blur(4px) opacity(25%);
+}
+
+.date {
+  min-width: 52px;
+}

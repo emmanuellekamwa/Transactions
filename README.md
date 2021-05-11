@@ -1,24 +1,48 @@
-# README
+# Group Our Transactions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a capstone project for the Microverse Rails module, it is based on an app for grouping transactions by goal with your family/friends.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+To have access to this project on your local machine, follow the following steps
 
-* System dependencies
+- First clone the repo by typing in your terminal git clone followed by the link to the repo
+- Browse into the folder by typing cd followed by the name of the folder
+- Checkout the correct branch by typing git checkout followed by the branch name
+- Bundle all the gems needed using bundle install
+- Install yarn
+- Run rails db:create and rails db:migrate for the database
+- Launch the server by typing rails server
+- Run tests using bundle exec Rspec
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby on Rails
+- Bootstrap
+- VsCode
 
-* Database initialization
+## Live demo
+[Live Demo](https://fathomless-eyrie-49106.herokuapp.com/)
 
-* How to run the test suite
+## Author
 
-* Services (job queues, cache servers, search engines, etc.)
+**Kamwa Emmanuelle Alix**
+- Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+- Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+- Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4)
 
-* Deployment instructions
+## Credits
 
-* ...
+This credit is given to the author of the desing Gregoire Vella https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding
+
+## Contributions
+
+Contributions, issues and feature requests are highly welcomed
+
+## Show some support
+
+Give a star if you like this project
+
+
+
+

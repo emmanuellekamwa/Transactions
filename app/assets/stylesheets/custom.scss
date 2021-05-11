@@ -1,0 +1,106 @@
+$primary: #3778c2;
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'bootstrap';
+
+#main_container {
+  background-color: #fafafa;
+  height: 100vh;
+  padding: 0;
+  max-width: 660px;
+
+  #subcontainer {
+    height: calc(100% - 56px);
+    font-family: 'Proxima Nova', serif, bold;
+    max-width: 660px;
+  }
+}
+
+.text-center {
+  font-family: 'Cookie', cursive;
+}
+
+.home_title {
+  font-family: 'Cookie', cursive;
+  font-size: 2.5em;
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 90px;
+  }
+}
+
+.user {
+  position: relative;
+  left: 120px;
+}
+
+.login {
+  position: relative;
+  left: 130px;
+}
+
+.form {
+  margin-left: 100px;
+}
+
+.fields {
+  width: 70%;
+  margin-left: 140px;
+  margin-bottom: 100px;
+}
+
+#o-form {
+  height: 70%;
+}
+
+//Header Nav
+.navbar {
+  min-height: 56px;
+
+  .burguer {
+    position: fixed;
+  }
+
+  .title {
+    max-width: 65%;
+  }
+}
+
+//Form, error styling
+.error_list {
+  color: rgb(199, 0, 0);
+  font-size: 0.9em;
+}
+
+.field_with_errors {
+  input[type],
+  textarea[name] {
+    border-color: rgb(167, 55, 53);
+  }
+
+  input[type]:focus,
+  textarea[name]:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+    box-shadow: rgba(19, 19, 19, 0.07) 0 1px 1px inset, rgb(107, 54, 54) 0 0 6px;
+  }
+}
+
+// All bottom buttons
+.link-btn {
+  display: inline-grid;
+}
+
+//icons
+.img-frame,
+img {
+  height: 80px;
+  min-width: 80px;
+  width: 80px;
+}
+
+.lg-img {
+  height: 100px;
+  width: 100px;
+}
